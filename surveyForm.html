@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 align="center">Library Survey</h1>
+    <div align="center">
+      <form action="/submit" algin="center">
+        <div class="name">
+          <label for="name"> Name </label>
+          <input type="text" id="name" required />
+        </div>
+        <br />
+
+        <div class="email">
+          <label for="email"> Email </label>
+          <input type="text" id="email" required />
+        </div>
+        <br />
+
+        <div class="age">
+          <label for="age"> Age </label>
+          <input type="text" id="age" required />
+        </div>
+
+        <div>
+          <p>How often do you visit the library?</p>
+          <select name="visit" id="">
+            <option value="#">select</option>
+            <option value="">Daily</option>
+            <option value="">Weekly</option>
+            <option value="">Monthly</option>
+          </select>
+        </div>
+
+        <div>
+          <p>
+            when you visit, are you usually able to find what you are looking
+            for?
+          </p>
+          <div>
+            <input type="radio" id="always" />
+            <label for="always">Always</label>
+          </div>
+
+          <div>
+            <input type="radio" id="sometimes" />
+            <label for="sometimes">Sometimes</label>
+          </div>
+
+          <div>
+            <input type="radio" id="rarely" />
+            <label for="rarely">Rarely</label>
+          </div>
+
+          <div>
+            <input type="radio" id="never" />
+            <label for="never">Never</label>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            Please check all of the reasons you visit the library: (Check all
+            that apply)
+          </p>
+          <div>
+            <input type="checkbox" /><label for=""
+              >to check out / return books</label
+            >
+          </div>
+          <div>
+            <input type="checkbox" /><label for="">to use the computer</label>
+          </div>
+
+          <div>
+            <input type="checkbox" /><label for=""
+              >to get a book recommendation</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" /><label for=""
+              >to do research / find information</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" /><label for="">to take a class</label>
+          </div>
+        </div>
+
+        <div>
+          <p>Anything you would like to see improve?</p>
+          <textarea
+            name=""
+            id=""
+            placeholder="Enter your commet here...."
+          ></textarea>
+        </div>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
